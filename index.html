@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Main Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <title>Prayer Times</title>
+
+    <!-- Import Axios Library -->
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="content">
+      <div class="prayer-times">
+        <h2>مواقيت الصلاة</h2>
+        <div class="selectCountry">
+          <div class="country">
+            <div>
+              <label for="country">: اختر الدولة</label>
+              <select id="country">
+                <option value="سوريا">سوريا</option>
+                <option value="السعودية">السعودية</option>
+                <option value="مصر">مصر</option>
+                <option value="الجزائر">الجزائر</option>
+                <option value="المغرب">المغرب</option>
+                <option value="الأردن">الأردن</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="city">: اخنر المدينة</label>
+              <select id="city">
+              </select>
+            </div>
+          </div>
+
+          <div class="info">
+            <p>الدولة : سوريا / اللاذقية</p>
+          </div>
+        </div>
+        <div dir="rtl" id="prayerTimes" class="times"></div>
+      </div>
+    </div>
+    <script src="js/getPrayerTimes.js"></script>
+  </body>
+</html>
